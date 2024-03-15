@@ -46,6 +46,14 @@ pub struct BinaryTree<T: Ord> {
 
 // Implement `new`, `insert`, `len`, and `has`.
 
+fn main() {
+    let mut a: i32 = 10;
+    let b: &i32 = &a;
+    let c: &i32 = &a;
+    let d: &mut i32 = &mut a;
+    let e: &mut i32 = &mut a;
+}
+
 impl<T: Ord> BinaryTree<T> {
     fn new() -> Self {
         BinaryTree { root: Subtree(None) }
